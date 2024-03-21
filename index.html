@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="hw14.js"></script>
+
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0 auto;
+            background-color: rgb(183, 209, 235);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .container input{
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        h2{
+            margin: 40px 60px 40px 60px;
+            color: white;
+            background-color: rgb(123, 159, 194);
+            padding: 20px 60px;
+            border: 1px solid hsl(0, 0%, 100%);
+            border-radius: 5px;
+        }
+        input{
+            width: 200px;
+            height: 28px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 5px;
+            color: rgb(80, 114, 149);
+            outline: 0;
+        }
+        input:hover{
+            border: 2px solid rgb(80, 114, 149);
+
+        }
+        #alert{
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            color: rgb(181, 10, 130);
+        }
+        #submitButton:hover{
+            border: rgb(255, 255, 255);
+        }
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+    
+    
+    <div class="container">
+
+    <form action="">
+        <h2>Registration form</h2>
+
+        <input type="text" name="name" id="name" placeholder="Type your name">
+
+        <input type="text" name="email" id="email" placeholder="Enter your email">
+
+
+        <input type="number" name="number" id="number" placeholder="Enter your phone number">
+
+        <input type="password" name="password" id="password" placeholder="Create a password">
+
+        <input type="password" name="password2" id="password2" placeholder="Repeat your password">
+
+        <!-- <input type="submit" id="submitButton" value="Send" disabled> -->
+        <a href="second.html"><input type="button" id="submitButton" value="Send" disabled></a>
+    </form>
+    <div id="alert"></div> 
+    </div>
+    
+    
+
+
+</body>
+</html>
